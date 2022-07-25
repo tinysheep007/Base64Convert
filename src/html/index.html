@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="../css/forms.css" />
+</head>
+
+
+<body>
+
+    <h1>My First Heading</h1>
+    <p>My first paragraph.</p>
+
+    <div class="formcarryContainer">
+        <form id="formcarryForm">
+            <label for="nameInput">Name</label>
+            <input type="text" id="nameInput" name="name" />
+
+            <label for="messageInput">Message</label>
+            <textarea id="messageInput" cols="30" rows="2" name="message"></textarea>
+
+            <label for="pictureInput">Picture</label>
+            <input type="file" id="pictureInput" name="picture" multiple />
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+
+    <div class="data-holder">
+        <p>DATA:</p>
+        <pre id="code"></pre>
+    </div>
+    
+
+
+    <script src="../js/handle.js"></script>
+</body>
+
+
+</html>
