@@ -1,6 +1,6 @@
 # If you only want to test out backend to receive picture (express)
 
--just nodemon start the express=server holder and you can do your submission on the frontend or postman
+-just nodemon start the express-server holder and you can do your submission on the frontend or postman
 
 # How to run the code?
 
