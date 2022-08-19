@@ -2,7 +2,7 @@
 
 -just nodemon start the express-server folder and you can do your submission on the frontend or postman
 
--test especailly route http://localhost:3000/base64
+-test especailly the POST route http://localhost:3000/base64
 
 -you can add the input as shown below in Postman
 
