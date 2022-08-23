@@ -1,3 +1,15 @@
+# If you only want to test out backend to receive picture (express)
+
+-just nodemon start the express-server folder and you can do your submission on the frontend or postman
+
+-test especailly the POST route http://localhost:3000/base64
+
+-you can add the input as shown below in Postman
+
+![input](https://user-images.githubusercontent.com/58338071/185515143-23f9bc10-09b2-4471-8f05-65a4cbe0bde8.JPG)
+
+-after you submit and it respond back with "connected", double check your server folder. There should be a new cat image.
+
 # How to run the code?
 
 ## Start the Front End (Not really / It's literally just a single html page)
