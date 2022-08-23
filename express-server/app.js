@@ -17,6 +17,13 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 let imageCount = 0;
 
+app.get('/hello',async (req,res)=>{
+  res.send("hello wrold");
+})
+
+
+
+
 app.post('/upload', async (req, res, next) => {
   // exclude name and message for the sake of demo
   // all other body items will be considered as a file
@@ -55,7 +62,7 @@ app.post('/testInput', async (req, res) => {
 
 //this route accepts pure base64 code and decode them into actual images
 //and save in the local folder
-app.post('/base64', async (req, res) => {
+app.post('/picToBase64', async (req, res) => {
   const { base64 } = req.body;
   // Convert base64 to buffer => <Buffer ff d8 ff db 00 43 00 ...
   const buffer = Buffer.from(base64, "base64");
@@ -63,6 +70,7 @@ app.post('/base64', async (req, res) => {
     if (err) throw new Error(err);
     res.write(`resized${imageCount}.jpg`);
   });
+
   //console.log("the base64 string is "+base64);
   imageCount = imageCount + 1;
   res.send("connected");
